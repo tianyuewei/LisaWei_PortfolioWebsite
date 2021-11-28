@@ -1,0 +1,14 @@
+{
+  "description": "GD 431 Project 4",
+  "private": true,
+  "engines": {
+    "node": "12"
+  },
+  "scripts": {
+    "start": "eleventy --serve",
+    "build": "NODE_ENV=production eleventy"
+  },
+  "dependencies": {
+    "@11ty/eleventy": "^0.12.1"
+  }
+}

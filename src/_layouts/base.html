@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>
+      {% if pageTitle %} {{ pageTitle }} - {% endif %} {{ siteData.name }}
+    </title>
+
+    <link rel="stylesheet/less" type="text/css" href="/less/main.less" />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/less.js/4.1.2/less.min.js"
+      integrity="sha512-eXBn7AaMbUOWb3PSDhwcjByoM89FeO1SF9Jww6kqPYQkBrGZvqAKFbtqLHh5O95rYA/AOtWZ0QRO2S6rP+KsUw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <style>
+      
+    </style>
+  </head>
+
+  <body>
+    {{ content | safe }}
+
+    <script src="/js/main.js">
+    </script>
+  </body>
+</html>
